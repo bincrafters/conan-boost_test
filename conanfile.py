@@ -12,27 +12,27 @@ class BoostTestConan(ConanFile):
     lib_short_names = ["test"]
     options = {"shared": [True, False]}
     default_options = "shared=False"
-    build_requires = "Boost.Generator/1.65.1@bincrafters/testing" 
-    requires =  "Boost.Algorithm/1.65.1@bincrafters/testing", \
-                      "Boost.Assert/1.65.1@bincrafters/testing", \
-                      "Boost.Bind/1.65.1@bincrafters/testing", \
-                      "Boost.Config/1.65.1@bincrafters/testing", \
-                      "Boost.Core/1.65.1@bincrafters/testing", \
-                      "Boost.Detail/1.65.1@bincrafters/testing", \
-                      "Boost.Exception/1.65.1@bincrafters/testing", \
-                      "Boost.Function/1.65.1@bincrafters/testing", \
-                      "Boost.Io/1.65.1@bincrafters/testing", \
-                      "Boost.Iterator/1.65.1@bincrafters/testing", \
-                      "Boost.Mpl/1.65.1@bincrafters/testing", \
-                      "Boost.Numeric_Conversion/1.65.1@bincrafters/testing", \
-                      "Boost.Optional/1.65.1@bincrafters/testing", \
-                      "Boost.Preprocessor/1.65.1@bincrafters/testing", \
-                      "Boost.Range/1.65.1@bincrafters/testing", \
-                      "Boost.Smart_Ptr/1.65.1@bincrafters/testing", \
-                      "Boost.Static_Assert/1.65.1@bincrafters/testing", \
-                      "Boost.Timer/1.65.1@bincrafters/testing", \
-                      "Boost.Type_Traits/1.65.1@bincrafters/testing", \
-                      "Boost.Utility/1.65.1@bincrafters/testing"
+    build_requires = "Boost.Generator/1.65.1@bincrafters/stable" 
+    requires =  "Boost.Algorithm/1.65.1@bincrafters/stable", \
+                      "Boost.Assert/1.65.1@bincrafters/stable", \
+                      "Boost.Bind/1.65.1@bincrafters/stable", \
+                      "Boost.Config/1.65.1@bincrafters/stable", \
+                      "Boost.Core/1.65.1@bincrafters/stable", \
+                      "Boost.Detail/1.65.1@bincrafters/stable", \
+                      "Boost.Exception/1.65.1@bincrafters/stable", \
+                      "Boost.Function/1.65.1@bincrafters/stable", \
+                      "Boost.Io/1.65.1@bincrafters/stable", \
+                      "Boost.Iterator/1.65.1@bincrafters/stable", \
+                      "Boost.Mpl/1.65.1@bincrafters/stable", \
+                      "Boost.Numeric_Conversion/1.65.1@bincrafters/stable", \
+                      "Boost.Optional/1.65.1@bincrafters/stable", \
+                      "Boost.Preprocessor/1.65.1@bincrafters/stable", \
+                      "Boost.Range/1.65.1@bincrafters/stable", \
+                      "Boost.Smart_Ptr/1.65.1@bincrafters/stable", \
+                      "Boost.Static_Assert/1.65.1@bincrafters/stable", \
+                      "Boost.Timer/1.65.1@bincrafters/stable", \
+                      "Boost.Type_Traits/1.65.1@bincrafters/stable", \
+                      "Boost.Utility/1.65.1@bincrafters/stable"
 
                       #algorithm9 assert1 bind3 config0 core2 detail5 exception5 function5 io1 iterator5 mpl5 numeric~conversion6 optional5 preprocessor0 range7 smart_ptr4 static_assert1 timer4 type_traits3 utility5
 
