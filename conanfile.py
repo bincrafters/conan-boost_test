@@ -1,5 +1,6 @@
 from conans import ConanFile, tools, os
 
+
 class BoostTestConan(ConanFile):
     name = "Boost.Test"
     version = "1.65.1"
