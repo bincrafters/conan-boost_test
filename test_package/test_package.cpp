@@ -1,7 +1,7 @@
-#include <boost/test/output_test_stream.hpp>
+#include <boost/test/unit_test_log_formatter.hpp>
 
 int main()
 {
-	boost::test_tools::output_test_stream output( "test.log", true );
+	boost::unit_test::log_entry_data();
 }
 
