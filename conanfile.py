@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostTestConan(ConanFile):
     name = "boost_test"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-test"
+    url = "https://github.com/bincrafters/conan-boost_test"
 
     lib_short_names = ["test"]
     is_header_only = False
