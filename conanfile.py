@@ -46,6 +46,9 @@ class BoostTestConan(ConanFile):
         for dep_name in boost_deps_only:
             self.info.requires[dep_name].full_version_mode()
 
+    def package_info_additional(self):
+        self.cpp_info.libs = [x for x in self.cpp_info.libs if x.find('exec_monitor') < 0]
+
     # BEGIN
 
     description = "Please visit http://www.boost.org/doc/libs/1_66_0"
