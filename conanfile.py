@@ -33,9 +33,9 @@ class BoostTestConan(base.BoostBaseConan):
         "boost_type_traits",
         "boost_utility"
     ]
-
-    def build_requirements(self):
-        self.build_requires("boost_predef")
+    b2_build_requires = [
+        "boost_predef"
+    ]
 
     def package_info_additional(self):
         self.cpp_info.libs = [x for x in self.cpp_info.libs if x.find('exec_monitor') < 0]
