@@ -4,7 +4,7 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.67.0@bincrafters/testing")
+base = python_requires("boost_base/1.68.0@bincrafters/testing")
 
 class BoostTestConan(base.BoostBaseConan):
     name = "boost_test"
@@ -33,10 +33,7 @@ class BoostTestConan(base.BoostBaseConan):
         "boost_type_traits",
         "boost_utility"
     ]
-    b2_build_requires = [
-        "boost_predef"
-    ]
+    b2_build_requires = ["boost_predef"]
 
     def package_info_additional(self):
         self.cpp_info.libs = [x for x in self.cpp_info.libs if x.find('exec_monitor') < 0]
-
